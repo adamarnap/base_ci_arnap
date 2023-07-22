@@ -1,0 +1,40 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+class template_controller extends CI_Controller {
+
+    //Untuk mendefinisikan judul dalam sebuah halaman
+    private $sub_title;
+    private $main_title;
+
+    public function __construct()
+    {
+        parent::__construct();
+        $this->load->library('form_validation');
+        $this->load->model('folder/Nama_model');
+        $this->load->model('M_portal');
+        $this->sub_title = 'Menu';
+        $this->main_title = 'Sistem';
+    }
+
+
+    public function index(){
+        // Mengambil data dari session
+        $contoh_id = $this->session->userdata('contoh_id');
+        $data['contoh'] = $this->Nama_model->get_data_contoh($contoh_id);
+
+        //Mengambil data portal untuk judul dari Model
+        $data['portal_data'] = $this->M_portal->get_data_portal();
+        $data['portal'] = $data['portal_data'][0]['portal_nm'];
+        
+        // Data Judul
+        $data['main_title'] = $this->main_title;
+        $data['sub_title'] = $this->sub_title;
+
+        // Display
+        $this->load->view('folder_template/file_template', $data);
+        $this->load->view('folder/file');
+        $this->load->view('folder_template/file_template', $data);
+    }
+
+}
