@@ -90,7 +90,7 @@
                              </div>
                              <div class="col">
                                  <label class="col-form-label"><b>Icon Menu</b></label>
-                                 <input type="text" id="" value="<?= $mi['menu_icon']?>" name="menu_icon" class="form-control" placeholder="Icon Menu" required>
+                                 <input type="text" id="" value="<?= $menu_by_id['menu_icon']?>" name="menu_icon" class="form-control" placeholder="Icon Menu" required>
                                  <small class="text-danger pl-2">Wajib diisi</small>
                              </div>
                              <div class="col">
