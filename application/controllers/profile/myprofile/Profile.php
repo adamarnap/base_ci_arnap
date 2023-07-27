@@ -11,6 +11,7 @@ class Profile extends CI_Controller
     public function __construct()
     {
         parent::__construct();
+        cek_akses_halaman();
         $this->load->library('form_validation');
         $this->load->model('profile/myprofile/M_profile');
         $this->load->model('M_portal');

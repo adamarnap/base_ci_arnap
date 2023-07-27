@@ -14,6 +14,7 @@ class Portal extends CI_Controller
         $this->load->model('M_portal');
         $this->sub_title = 'Portal';
         $this->main_title = 'Sistem';
+        cek_akses_halaman();
     }
 
 

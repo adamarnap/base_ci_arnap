@@ -15,6 +15,7 @@ class Group extends CI_Controller
         $this->load->model('setting/sistem/M_group');
         $this->sub_title = 'Grup';
         $this->main_title = 'Sistem';
+        cek_akses_halaman();
     }
 
 

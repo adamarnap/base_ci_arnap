@@ -16,6 +16,7 @@ class App_data extends CI_Controller
         $this->load->model('M_portal');
         $this->sub_title = 'Data Aplikasi';
         $this->main_title = 'Sistem';
+        cek_akses_halaman();
     }
 
 

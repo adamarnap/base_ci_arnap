@@ -15,6 +15,7 @@ class Menu extends CI_Controller
         $this->load->model('M_portal');
         $this->sub_title = 'Menu';
         $this->main_title = 'Sistem';
+        cek_akses_halaman();
     }
 
 
