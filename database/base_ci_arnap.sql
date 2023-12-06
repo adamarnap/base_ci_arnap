@@ -46,7 +46,7 @@ CREATE TABLE `mst_app_data` (
 /*Data for the table `mst_app_data` */
 
 insert  into `mst_app_data`(`app_data_id`,`portal_id`,`logo_app`,`no_tlp_app`,`email_app`,`no_whatsapp_app`,`no_telegram_app`,`instagram_app`,`facebook_app`,`tiktok_app`,`twitter_app`,`github_app`,`linkedin_app`,`youtube_app`,`mdd`,`mdb`,`mdb_created`) values 
-(1,'01','default.png','085212764893','baseciarnap@mail.com','085212764893','085212764893','baseciarnap','baseciarnap','baseciarnap','baseciarnap','baseciarnap','baseciarnap','baseciarnap','2023-07-21 23:37:56','230621000001','adminbase');
+(1,'01','12.png','083850010004','sarjanasipil.education@gmail.com','083850010004','083850010004','sarjanasipil.ed','-','sarjanasipil.ed','-','-','-','-','2023-07-27 10:59:51','230621000001','adminbase');
 
 /*Table structure for table `mst_email` */
 
@@ -121,18 +121,20 @@ CREATE TABLE `mst_menu` (
 
 insert  into `mst_menu`(`menu_id`,`portal_id`,`menu_level`,`menu_induk`,`menu_judul`,`menu_deskripsi`,`menu_url`,`menu_urut`,`status_aktif`,`status_tampil`,`menu_icon`,`mdb`,`mdb_name`,`mdd`) values 
 ('01','01','tunggal','0','Dashboard','Menu Utama','dashboard',1,'1','1','fa fa-home',NULL,NULL,NULL),
-('02','01','induk','0','Sistem','Sistem Aplikasi','#',10,'1','1','fa fa-cogs','2306210000','adminbase','2023-07-15 09:51:14'),
+('02','01','induk','0','Sistem','Sistem Aplikasi','#',20,'1','1','fa fa-cogs','2306210000','adminbase','2023-07-27 11:31:32'),
 ('03','01','submenu','02','Portal','Portal Aplikasi','setting/sistem/portal',1,'1','1','-',NULL,NULL,NULL),
 ('04','01','submenu','02','Grup','Grup User','setting/sistem/group',2,'1','1','-',NULL,NULL,NULL),
 ('05','01','submenu','02','Role','Role User','setting/sistem/role',3,'1','1','-',NULL,NULL,NULL),
 ('06','01','submenu','02','Menu','Manajemen Menu','setting/sistem/menu',4,'1','1','-',NULL,NULL,NULL),
 ('07','01','submenu','02','Hak Akses','Hak Akses Menu','setting/sistem/akses',5,'1','1','-',NULL,NULL,NULL),
-('1689667594','01','induk','0','User Manajemen','Manajemen Data User','#',9,'1','1','fa fa-users','2306210000','adminbase','2023-07-18 15:15:31'),
+('1689667594','01','induk','0','User Manajemen','Manajemen Data User','#',18,'1','1','fa fa-users','2306210000','adminbase','2023-07-27 11:32:06'),
 ('1689670027','01','submenu','1689667594','User','Data User','setting/user/user',1,'1','1','-','2306210000','adminbase','2023-07-18 15:47:07'),
-('1689750554','01','induk','0','Profil','Menu Profile Akun Saya','#',8,'1','1','fa fa-user','2306210000','adminbase','2023-07-19 14:16:17'),
+('1689750554','01','induk','0','Profil','Menu Profile Akun Saya','#',19,'1','1','fa fa-user','2306210000','adminbase','2023-07-27 11:31:46'),
 ('1689750660','01','submenu','1689750554','Profil Saya','Data Profile Saya','profile/myprofile/profile',1,'1','1','-','2306210000','adminbase','2023-07-19 14:11:00'),
 ('1689870222','01','submenu','02','Email Verifikasi','Email aktifasi akun pengguna dan verifikasi reset password','setting/sistem/email',6,'1','1','-','2306210000','adminbase','2023-07-20 23:23:42'),
-('1689949241','01','submenu','02','Data Aplikasi','Data-data Aplikasi','setting/sistem/app_data',7,'1','1','-','2306210000','adminbase','2023-07-21 21:20:41');
+('1689949241','01','submenu','02','Data Aplikasi','Data-data Aplikasi','setting/sistem/app_data',7,'1','1','-','2306210000','adminbase','2023-07-21 21:20:41'),
+('1690431550','01','submenu','02','Rekening Bank','Data rekening bank perusahaan','setting/sistem/rekening',8,'1','1','-','2306210000','adminbase','2023-07-27 11:38:52'),
+('1690431782','01','submenu','1690431344','Transaksi Paket','Data transaksi pembeli paket','transaksi/keuangan/transaksi_paket',1,'1','1','-','2306210000','adminbase','2023-07-27 11:23:02');
 
 /*Table structure for table `mst_portal` */
 
@@ -154,7 +156,7 @@ CREATE TABLE `mst_portal` (
 /*Data for the table `mst_portal` */
 
 insert  into `mst_portal`(`portal_id`,`portal_nm`,`site_title`,`site_desc`,`meta_desc`,`meta_keyword`,`mdb`,`mdb_name`,`mdd`) values 
-('01','Base CI Arnap','Base Code Igniter Adam Arnap','Base Code Igniter Adam Arnap','Base Code Igniter Adam Arnap','Base Code Igniter Adam Arnap',NULL,NULL,'2023-07-22 00:25:50');
+('01','Base CI Arnap','Base Code Igniter Arnap','Base Code Igniter 3 Arnap','Base Code Igniter 3 Arnap','Base Code Igniter 3 Arnap','2306210000','adminbase','2023-07-27 10:53:16');
 
 /*Table structure for table `mst_role` */
 
@@ -210,7 +212,9 @@ insert  into `mst_role_menu`(`role_id`,`menu_id`,`role_menu_akses`) values
 ('01','1689750554','1'),
 ('01','1689750660','1'),
 ('01','1689870222','1'),
-('01','1689949241','1');
+('01','1689949241','1'),
+('01','1690431550','1'),
+('01','1690431782','1');
 
 /*Table structure for table `mst_role_user` */
 

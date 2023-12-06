@@ -117,14 +117,14 @@
                  <div class="modal-content">
                      <!-- Modal Header -->
                      <div class="modal-header">
-                         <h5 class="modal-title">Edit Data Portal Baru</h5>
+                         <h5 class="modal-title">Edit Data Grup Baru</h5>
                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                              <span aria-hidden="true">&times;</span>
                          </button>
                      </div>
                      <!-- Modal Body -->
                      <div class="modal-body">
-                         <!-- Form Tambah Data Portal -->
+                         <!-- Form Tambah Data Grup -->
                          <form action="<?= base_url('setting/sistem/group/edit_proses') ?>" method="post">
                              <input type="hidden" name="group_id" value="<?= $gd['group_id'] ?>">
                              <div class="row">
