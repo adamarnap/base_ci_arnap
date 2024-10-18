@@ -278,10 +278,10 @@
         })
     }
 
-// Dataatable
-$(document).ready(function() {
-    $('#dataTable').DataTable({
-        "pageLength": 100
+    // Dataatable
+    $(document).ready(function() {
+        $('#dataTable').DataTable({
+            "pageLength": 100
+        });
     });
-});
 </script>
